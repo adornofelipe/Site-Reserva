@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Reserva Espaço</title>
+		<!-- Tell the browser to be responsive to screen width -->
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+
+	</head>
+	<body>
+		<div class="container-fluid">
+			<header>
+				<nav class="navbar navbar-default" style="background-color: #4682B4; border-color: #4682B4;">
+					<ul class="nav navbar-nav">
+						
+						<li><a href="reserva.html" style="color: #FFFFFF">Espaços</a></li>
+						<li><a href="agendamentos.html" style="color: #FFFFFF">Agendamentos</a></li>
+					</ul>
+				</nav>
+			</header>
+			<div class="content-wrapper">	
+				<section class="content">
+						<main>
+							<div class="box-header with-border">
+							  <h3 class="box-title col-md-12">Agendamentos</h3>
+							</div>
+							
+							<script>
+      
+                // Chama a função para criar a tabela assim que a página carregar
+                window.onload = function() {
+                    criarTabelaAgendamentos();
+                };
+            </script>
+            
+            <table class="table table-hover" overflow="scroll" id="tabela-agendamentos">
+              <thead> 
+                  <tr> 
+                      <th>ID</th>
+                      <th>Data</th> 
+                      <th>Hora</th> 
+                      <th>Email</th>
+                      <th>Nome</th>
+                      <th>Espaço</th>
+                      <th>Ações</th>
+                      
+                  </tr> 
+              </thead> 
+              <tbody>
+                  <!-- Dados da tabela vêm aqui -->
+                 
+                  <!-- Mais linhas da tabela podem ser adicionadas aqui -->
+              </tbody>
+          </table>
+          
+          <div id="form-edicao" style="display: none;">
+              <div class="input-group mb-3">
+                  <input id="edit-data" type="text" class="form-control" placeholder="Data">
+                  <input id="edit-hora" type="text" class="form-control" placeholder="Hora">
+                  <input id="edit-email" type="text" class="form-control" placeholder="Email">
+                  <input id="edit-nome" type="text" class="form-control" placeholder="Nome">
+                  <input id="edit-espaco" type="text" class="form-control" placeholder="Espaço">
+                  <button onclick="salvarEdicao(1)" class="btn btn-success">Salvar</button>
+                  <button onclick="cancelarEdicao()" class="btn btn-danger">Cancelar</button>
+              </div>
+          </div>
+							</nav> 
+						</main>
+				
+				</section>
+				
+			</div>
+		</div>
+		
+    <script src="remover.js"> </script>
+    <script src="alterar.js"> </script>
+    
+   
+	</body>
+</html>

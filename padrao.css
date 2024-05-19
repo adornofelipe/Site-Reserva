@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D&family=Orelega+One&display=swap'); /*------------ link da font  ------------*/
+.formulario {
+position: absolute;
+left:50%;
+top:17%;
+margin-left:-120px;
+margin-top:-45px;
+height: 100%;
+}
+
+body{
+    font-family: 'K2D', sans-serif;
+    background: #FA8072;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  /* Adicione estilos conforme necessário para o layout do catálogo */
+  .filme {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .imagem-filme {
+    width: 500px;
+    height: 700px;
+    display: block;
+    margin: 0 auto; /* Centraliza horizontalmente */
+  }
+
+  /*------------ For small screens------------*/
+
+@media only screen and (max-width: 768px){
+
+    .box-area{
+       margin: 0 10px;
+
+    }
+    .left-box{
+       height: 100px;
+       overflow: hidden;
+    }
+    .right-box{
+       padding: 20px;
+    }
+
+}
+
+h3{
+    background-color: #212529;
+    color:white;
+    border: 20px;
+}
+
+.container {
+  text-align: center;
+}
+img {
+  max-width: 700px;
+  height: auto;
+  margin-top: 20px;
+}
